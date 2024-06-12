@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Processing Photo Album</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your custom CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Image Processing Photo Album</h1>
+        <input type="file" accept="image/*" id="uploadInput">
+        <hr>
+        <div id="imageContainer"></div>
+        <div id="qrCodeContainer"></div>
+        <br>
+        <div class="button-container">
+            <button class="btn btn-primary" onclick="checkColor()">Check Color</button>
+            <button class="btn btn-primary" onclick="duplicateImage()">Duplicate Image</button>
+            <button class="btn btn-primary" onclick="reduceResolution()">Reduce Resolution</button>
+            <button class="btn btn-primary" onclick="increaseBrightness()">Increase Brightness</button>
+            <button class="btn btn-primary" onclick="createAvatar()">Create Avatar</button>
+            <button class="btn btn-primary" onclick="createThumbnails()">Create Thumbnails</button>
+            <button class="btn btn-primary" onclick="applyBlur()">Apply Blur</button>
+            <input type="checkbox" id="grayScaleToggle" onchange="rgbToGrayScale()">
+            <label class="form-check-label" for="grayScaleToggle">Convert to Gray Scale</label>
+        </div>
+        <hr>
+        <!-- Dropdown buttons here -->
+    </div>
+    <script src="scripts.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
+
+  
